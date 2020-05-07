@@ -44,7 +44,6 @@ $MKDIR $DEST/home/$ME/.ssh/
 $MKDIR $DEST/home/$ME/Local
 $MKDIR $DEST/home/$ME/.config/
 $MKDIR $DEST/home/$ME/.config/vlc/
-$MKDIR $DEST/home/$ME/.config/i3/
 
 $RSYNC $RSYNC_FLAGS ~/.emacs			$DEST/home/$ME/
 $RSYNC $RSYNC_FLAGS ~/.bashrc			$DEST/home/$ME/
@@ -53,12 +52,6 @@ $RSYNC $RSYNC_FLAGS ~/.links2/bookmarks.html	$DEST/home/$ME/.links2/
 
 cd /home/$ME/.config/vlc/
 $RSYNC $RSYNC_FLAGS * $DEST/home/$ME/.config/vlc/
-
-cd /home/$ME/.config/i3/
-$RSYNC $RSYNC_FLAGS * $DEST/home/$ME/.config/i3/
-
-cd /home/$ME/.config/i3status/
-$RSYNC $RSYNC_FLAGS * $DEST/home/$ME/.config/i3status/
 
 cd /home/$ME/.ssh
 $RSYNC $RSYNC_FLAGS * $DEST/home/$ME/.ssh/
