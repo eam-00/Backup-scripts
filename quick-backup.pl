@@ -1,7 +1,6 @@
 #!/usr/bin/env perl
 
-## my $BackupDir = "/var/backups/quick-backups";
-my $BackupDir = "/tmp/";
+my $BackupDir = "/var/backups/quick-backups";
 my $tar = "/usr/bin/tar cipz";
 
 system("$tar /var/spool/cron/ -f $BackupDir/crontabs.tgz");
