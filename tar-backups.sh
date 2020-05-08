@@ -40,10 +40,4 @@ $TAR /home/deploy/staging/shared/config/ -f $DEST/$HOST-home-deploy-staging-shar
 # fi
 #$TAR /etc/monit/ -f $DEST/$HOST-etc-monit.tar
 
-
-# if [ -f "$DEST/"${HOST}"-etc-nginx.tar" ]; then
-#    $MV $DEST/"${HOST}"-etc-nginx.tar $DEST/"${HOST}"-etc-nginx.tar.OLD
-# fi
-#$TAR /etc/nginx/ -f $DEST/$HOST-etc-nginx.tar
-
 ## EoF ##
