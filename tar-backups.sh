@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-HOST="xxxxxxxx"
+HOST=`/bin/hostname`
 DEST="/home/xxxxxxxxx"
 MV="/bin/mv"
 TAR="/bin/tar cip"
@@ -33,7 +33,6 @@ $TAR /var/spool/cron/crontabs/ -f $DEST/$HOST-var-spool-cron-crontabs.tar
     $MV $DEST/"${HOST}"-home-deploy-staging-shared-config.tar $DEST/"${HOST}"-home-deploy-staging-shared-config.tar.OLD
  fi
 $TAR /home/deploy/staging/shared/config/ -f $DEST/$HOST-home-deploy-staging-shared-config.tar
-
 
 # if [ -f "$DEST/"${HOST}"-etc-monit.tar" ]; then
 #    $MV $DEST/"${HOST}"-etc-monit.tar $DEST/"${HOST}"-etc-monit.tar.OLD
