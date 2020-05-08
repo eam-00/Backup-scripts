@@ -10,11 +10,11 @@ PASSWD_00="XXXXXXXXXXXXXXXx"
 ## Name of the database
 DB_00="xxxxxxxx"
 
-## Directory where the backupSIN trailing slash, directorio donde se almacena el archivo backup
-DIR_DUMP_00="/var/db.dumps/tap_production"
+## Directory where the backup is stored, WITHOUT a trailing slash
+DIR_DUMP_00="/var/db.dumps/xxxxxxxx"
 
 ## Nombre del archivo, lo normal es que sea el mismo nombre de la BD
-DB_DUMP_00="tap_production"
+DB_DUMP_00="tap_productio"
 
 $PRIORITY $MYSQL_DUMP -u$USER_00 -p$PASSWD_00 $DB_00 | $PRIORITY $GZIP > $DIR_DUMP_00/$DB_DUMP_00-$(date '+%Y%m%d').sql.gz
 
