@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-## HOST=`uname -n`
 HOST="xxxxxxxx"
 DEST="/home/xxxxxxxxx"
 MV="/bin/mv"
