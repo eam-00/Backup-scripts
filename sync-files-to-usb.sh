@@ -5,7 +5,7 @@
 ## from: Thinkpad T60p
 ## To: USB Backup (The Black Verbatim one)
 
-RSYNC='/usr/bin/rsync'
+RSYNC=`which rsync`
 RSYNC_FLAGS='-avzr --delete --progress'
 ME=`/usr/bin/whoami`
 MKDIR='mkdir -p'
