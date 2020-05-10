@@ -2,9 +2,9 @@
 
 Little collection of handy backup scripts.
 
-__msyql-db-dump.sh__
+_msyql-db-dump.sh_
 
-
+A plain and simple mysqldump backup script for a data base.
 
 __quick-backup.pl__
 
