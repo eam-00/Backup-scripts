@@ -16,5 +16,5 @@ Sync files to an external USB drive, provided the drive is mounted.
 
 **tar-backups.sh**
 
-Make backups of specific directories, creating a copy if they are already backuped.
+Make backups of specific directories, creating a copy of those directories, if they are already backuped.
 
