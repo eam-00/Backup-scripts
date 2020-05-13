@@ -34,9 +34,4 @@ $TAR /var/spool/cron/crontabs/ -f $DEST/$HOST-var-spool-cron-crontabs.tar
  fi
 $TAR /home/deploy/staging/shared/config/ -f $DEST/$HOST-home-deploy-staging-shared-config.tar
 
-# if [ -f "$DEST/"${HOST}"-etc-monit.tar" ]; then
-#    $MV $DEST/"${HOST}"-etc-monit.tar $DEST/"${HOST}"-etc-monit.tar.OLD
-# fi
-#$TAR /etc/monit/ -f $DEST/$HOST-etc-monit.tar
-
 ## EoF ##
