@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 ## sync-files-to-usb.sh
-## Rsyncs some files to a USB drive, makes a mirror copy from the origin
+## Rsyncs some files to a USB drive, makes a mirror copy from the origin to the destination.
+## Before starting the rsync, checks that the USB drive is mounted.
 ## from: Thinkpad T60p
 ## To: USB Backup (The Black Verbatim one)
 
