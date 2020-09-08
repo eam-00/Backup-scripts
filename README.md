@@ -1,6 +1,6 @@
 # Backup-scripts
 
-_Little collection of handy backup scripts._
+_A little collection of handy backup scripts._
 
 ## msyql-db-dump.sh
 
@@ -16,5 +16,5 @@ Sync files to an external USB drive, provided the drive is mounted.
 
 ## tar-backups.sh
 
-Make backups of specific directories, creating a copy of those directories, if they are already backuped.
+Make backups of specific directories, creating a copy of those directories, if an old backup of those already exists.
 
