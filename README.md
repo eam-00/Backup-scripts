@@ -2,7 +2,7 @@
 
 _Little collection of handy backup scripts._
 
-**msyql-db-dump.sh**
+## msyql-db-dump.sh
 
 A plain and simple mysqldump backup script for a data base.
 
