@@ -6,6 +6,7 @@
 ## copy of it, just in case.
 
 HOST=`/bin/hostname`
+## No trailing slash!
 DEST="/home/xxxxxxxxx"
 MV="/bin/mv"
 TAR="/bin/tar cip"
