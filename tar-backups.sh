@@ -2,8 +2,8 @@
 
 ## tar-backups.sh
 ## Makes a tar backup of a directory, and if a backup of the given
-## directory already exists, renames it first, so there is an old
-## copy of it, just in case.
+## directory already exists, renames before making a new copy,
+## just for safekeeping.
 
 HOST=`/bin/hostname`
 ## No trailing slash!
