@@ -15,6 +15,5 @@ A really quick and dirty Perl script to make backups of selected directories.
 Sync files to an external USB drive, provided the drive is mounted.
 
 ## tar-backups.sh
-
-Make backups of specific directories, creating a copy of those directories, if an old backup of those already exists.
+Makes backups of specific directories, if an old backup of a given directory already exists, it creates a copy before making the backup.
 
