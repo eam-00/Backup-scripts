@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 PROC='transmission'
+ME=`/usr/bin/whoami`
+BACKUP_PEN_DRIVE='Backup'
+
 case "$(pgrep $PROC | wc -w)" in
 
 0)  echo "Great: $PROC is not running, proceed with copy..."
