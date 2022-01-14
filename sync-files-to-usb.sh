@@ -12,10 +12,11 @@ MKDIR="mkdir -p"
 
 BACKUP_PEN_DRIVE="Backup"
 
-if [ -d "/media/$ME/$BACKUP_PEN_DRIVE/" -a -w "/media/$ME/$BACKUP_PEN_DRIVE/" ]
-then
+if [ -d "/media/$ME/$BACKUP_PEN_DRIVE/" -a -w "/media/$ME/$BACKUP_PEN_DRIVE/" ]; then
 
-    echo "Todo OK... Backupeando..."
+echo
+echo "Todo OK... Backupeando..."
+echo
 
 DEST="/media/$ME/$BACKUP_PEN_DRIVE/Linux/hosts/Optiplex-755-usff"
 
@@ -68,6 +69,12 @@ $RSYNC $RSYNC_FLAGS --exclude 'DSCN8324.00.jpg' --exclude 'DSCN8325.00.jpg' --ex
 cd ~/Emacs/
 $RSYNC $RSYNC_FLAGS --exclude 'Backups/*' * $DEST/home/$ME/Emacs/
 
+else
+echo
+echo
+echo "The USB Drive is not mounted"
+echo
+echo
 fi
 
 ## EoF ##
