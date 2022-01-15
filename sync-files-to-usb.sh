@@ -72,7 +72,8 @@ $RSYNC $RSYNC_FLAGS --exclude 'Backups/*' * $DEST/home/$ME/Emacs/
 else
 echo
 echo
-echo "The USB Drive is not mounted"
+echo "The USB Drive is not mounted..."
+echo "I'm sorry, Dave, I'm afraid I can't do that."
 echo
 echo
 fi
