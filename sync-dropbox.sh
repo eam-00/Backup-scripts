@@ -8,8 +8,10 @@ read server_name
 echo
 echo
 
+cmd_rsync=$(which rsync)
+
 cd ~/Dropbox
-rsync -e ssh --progress --delete -avzr * ${server_name}:~/Dropbox/
+${cmd_rsync} -e ssh --progress --delete -avzr * ${server_name}:~/Dropbox/
 
 ## EoF ##
 
