@@ -12,23 +12,32 @@ cmd_rsync=$(which rsync)
 opt_rsync_dryrun="-e ssh --progress --delete -navzr"
 opt_rsync_real="-e ssh --progress --delete -avzr"
 
-if [ ${server_name} == X60 ]; then
+function rsync_dropbox () {
+cd ~/Dropbox
+${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Dropbox/
+}
+
+function rsync_local () {
+cd ~/Local
+${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Local/
+}
+
+if [ ${server_name} == x60 ]; then
 cd ~/Local/
-${cmd_rsync} ${opt_rsync_dryrun} ${server_name}:~/Local/
+rsync_local
+rsync_dropbox
 
 elif [ ${server_name} == t410 ]; then
 cd ~/Local/
-${cmd_rsync} ${opt_rsync_dryrun} ${server_name}:~/Local/
-
-elif [ -d "~/Dropbox" ]; then
-cd ~/Dropbox
-${cmd_rsync} -e ssh --progress --delete -avzr * ${server_name}:~/Dropbox/
+rsync_local
+rsync_dropbox
 
 else
 
-echo -e "Host not found"
-
+cd ~/Dropbox
+echo `pwd`
+echo -e "Proceed with Dropbox Rsync... "
+rsync_dropbox
 fi
 
-## EoF ##
-
+## EOF ##
