@@ -23,12 +23,10 @@ ${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Local/
 }
 
 if [ ${server_name} == x60 ]; then
-cd ~/Local/
 rsync_local
 rsync_dropbox
 
 elif [ ${server_name} == t410 ]; then
-cd ~/Local/
 rsync_local
 rsync_dropbox
 
