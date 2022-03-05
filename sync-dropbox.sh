@@ -16,7 +16,9 @@ if [ ${server_name} == X60 ]; then
 cd ~/Local/
 ${cmd_rsync} ${opt_rsync_dryrun} ${server_name}:~/Local/
 
-
+elif [ ${server_name} == t410 ]; then
+cd ~/Local/
+${cmd_rsync} ${opt_rsync_dryrun} ${server_name}:~/Local/
 
 elif [ -d "~/Dropbox" ]; then
 cd ~/Dropbox
