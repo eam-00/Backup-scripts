@@ -33,7 +33,6 @@ rsync_dropbox
 else
 
 cd ~/Dropbox
-echo `pwd`
 echo -e "Proceed with Dropbox Rsync... "
 rsync_dropbox
 fi
