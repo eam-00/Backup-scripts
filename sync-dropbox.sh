@@ -22,7 +22,7 @@ elif [ -d "~/Dropbox" ]; then
 cd ~/Dropbox
 ${cmd_rsync} -e ssh --progress --delete -avzr * ${server_name}:~/Dropbox/
 
-elif
+else
 
 echo -e "Host not found"
 
