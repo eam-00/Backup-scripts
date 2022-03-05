@@ -18,10 +18,13 @@ if [ ${server_name} == X60 ]; then
 cd ~/Local/
 ${cmd_rsync} ${opt_rsync_dryrun} ${server_name}:~/Local/
 
-else
-
+elif [ -d "~/Dropbox" ]; then
 cd ~/Dropbox
 ${cmd_rsync} -e ssh --progress --delete -avzr * ${server_name}:~/Dropbox/
+
+elif
+
+echo -e "Host not found"
 
 fi
 
