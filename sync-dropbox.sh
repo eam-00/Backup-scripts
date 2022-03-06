@@ -34,12 +34,12 @@ ${cmd_rsync} ${opt_rsync_dryrun} --exclude 'Orig.dloads' * ${server_name}:~/Down
 
 
 if [ ${server_name} == x60 ]; then
-rsync_local
-rsync_dropbox
+ rsync_local
+ rsync_dropbox
 
 elif [ ${server_name} == t410 ]; then
-rsync_local
-rsync_dropbox
+ rsync_local
+ rsync_dropbox
 
 elif [ ${server_name} == t60p ]; then
  rsync_local
@@ -51,7 +51,7 @@ else
 
 cd ~/Dropbox
 echo -e "Proceed with Dropbox Rsync... "
-rsync_dropbox
+ rsync_dropbox
 fi
 
 ## EOF ##
