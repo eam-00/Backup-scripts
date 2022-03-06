@@ -22,6 +22,12 @@ cd ~/Local
 ${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Local/
 }
 
+function rsync_music () {
+cd ~/Music
+${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Music/
+}
+
+
 if [ ${server_name} == x60 ]; then
 rsync_local
 rsync_dropbox
