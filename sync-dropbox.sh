@@ -41,6 +41,12 @@ elif [ ${server_name} == t410 ]; then
 rsync_local
 rsync_dropbox
 
+elif [ ${server_name} == t60p ]; then
+ rsync_local
+ rsync_dropbox
+ rsync_music
+ rsync_downloads
+
 else
 
 cd ~/Dropbox
