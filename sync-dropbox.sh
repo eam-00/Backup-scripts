@@ -27,6 +27,11 @@ cd ~/Music
 ${cmd_rsync} ${opt_rsync_dryrun} * ${server_name}:~/Music/
 }
 
+function rsync_downloads () {
+cd ~/Downloads
+${cmd_rsync} ${opt_rsync_dryrun} --exclude 'Orig.dloads' * ${server_name}:~/Downloads/
+}
+
 
 if [ ${server_name} == x60 ]; then
 rsync_local
