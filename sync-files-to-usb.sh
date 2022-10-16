@@ -50,6 +50,7 @@ $RSYNC $RSYNC_FLAGS ~/.bashrc $DEST/home/$ME/
 $RSYNC $RSYNC_FLAGS ~/.bash_aliases $DEST/home/$ME/
 $RSYNC $RSYNC_FLAGS ~/.Xresources $DEST/home/$ME/
 $RSYNC $RSYNC_FLAGS ~/.links2/bookmarks.html $DEST/home/$ME/.links2/
+$RSYNC $RSYNC_FLAGS ~/.mg $DEST/home/$ME/
 
 cd ~/.config/vlc/
 $RSYNC $RSYNC_FLAGS * $DEST/home/$ME/.config/vlc/
