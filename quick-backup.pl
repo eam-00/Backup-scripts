@@ -2,6 +2,7 @@
 
 ## Directory where the backups are stored
 my $BackupDir = "/var/backups/quick-backups";
+## tar options
 my $tar = "/usr/bin/tar cipz";
 
 system("$tar /var/spool/cron/ -f $BackupDir/crontabs.tgz");
