@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 
+## Directory where the backups are stored
 my $BackupDir = "/var/backups/quick-backups";
 my $tar = "/usr/bin/tar cipz";
 
