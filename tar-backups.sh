@@ -5,7 +5,7 @@
 ## directory already exists, renames before making a new copy,
 ## just for safekeeping.
 
-HOST=`/bin/hostname`
+HOST=$(which hostname)
 ## No trailing slash!
 DEST="/home/xxxxxxxxx"
 MV=$(which mv)
