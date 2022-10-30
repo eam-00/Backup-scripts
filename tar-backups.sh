@@ -8,7 +8,7 @@
 HOST=`/bin/hostname`
 ## No trailing slash!
 DEST="/home/xxxxxxxxx"
-MV="/bin/mv"
+MV=$(which mv)
 MY_TAR="/bin/tar cip"
 
  if [ -f "$DEST/"${HOST}"-etc.tar" ]; then
