@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PRIORITY="/usr/bin/nice -n 19"
-MYSQL_DUMP="/usr/bin/mysqldump"
+cmd_mysqldump=$(which mysqldump)
 GZIP="/bin/gzip -9"
 
 USER_00="root"
