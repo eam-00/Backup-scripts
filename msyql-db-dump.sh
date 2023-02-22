@@ -2,7 +2,7 @@
 
 PRIORITY="/usr/bin/nice -n 19"
 cmd_mysqldump=$(which mysqldump)
-GZIP="/bin/gzip -9"
+GZIP=$(which mysqldump)" -9"
 
 USER_00="root"
 PASSWD_00="XXXXXXXXXXXXXXXx"
