@@ -7,7 +7,7 @@
 
 RSYNC=$(which rsync)
 RSYNC_FLAGS="-avzr --delete --progress"
-ME=`/usr/bin/whoami`
+ME=$(which whoami)
 MKDIR="mkdir -p"
 
 BACKUP_PEN_DRIVE="Backup"
