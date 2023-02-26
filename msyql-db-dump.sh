@@ -16,6 +16,6 @@ DIR_DUMP_00="/var/db.dumps/xxxxxxxx"
 ## Name of the dump file, usually, the same name as the DB
 DB_DUMP_00="xxxxxxxx"
 
-$PRIORITY $cmd_mysqldump -u$USER_00 -p$PASSWD_00 $DB_00 | $PRIORITY $GZIP > $DIR_DUMP_00/$DB_DUMP_00-$(date '+%Y%m%d').sql.gz
+$PRIORITY $cmd_mysqldump -u$USER_00 -p$PASSWD_00 $DB_00 | $PRIORITY $cmd_gzip > $DIR_DUMP_00/$DB_DUMP_00-$(date '+%Y%m%d').sql.gz
 
 ## EoF ##
